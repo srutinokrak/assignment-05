@@ -7,5 +7,6 @@ export interface ITech{
   rating: number;
   difficulty: string;
   badge: string;
+  badgeColor: string;
 }
 
