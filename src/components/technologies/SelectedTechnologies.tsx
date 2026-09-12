@@ -25,11 +25,12 @@ const SelectedTechnologies = ({
   };
 
   return (
-    <div >
-      <h2 className="font-bold">Your Stack</h2>
+    <div className="h-74.25 w-72.25 border border-gray-300 p-6 rounded-lg">
+     <div>
+         <h2 className="font-bold">Your Stack</h2>
       <div className="text-gray-400 mb-3">{selected?.length} Technology selected</div>
       {selected?.map((stack) => (
-        <div className="w-71.25 border border-gray-300 rounded-md px-4 py-2">
+        <div className="w-full border border-gray-300 rounded-md px-4 py-2">
          <div className="flex justify-between">
              <div className="flex items-center gap-2">
                 <img src={stack.icon} alt="" className="h-8" />
@@ -44,9 +45,11 @@ const SelectedTechnologies = ({
          </div>
         </div>
       ))}
-      <div>
-        <button className="" onClick={handleRemoveAll}>Remove All</button>
+      <div >
+        <button className="mt-4 w-full 
+            font-medium py-2 px-4 rounded-md border border-red-400 text-sm text-red-500 " onClick={handleRemoveAll}>Remove All</button>
       </div>
+     </div>
     </div>
   );
 };
