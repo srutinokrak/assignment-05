@@ -48,9 +48,11 @@ const TechnologyCard = ({
           </div>
         </div>
         <button
+        // disabled={selected.some((item) => item.name === technology.name)}
           onClick={() => handleSelected(technology)}
-          className="mt-4 w-full bg-black text-white
-            font-medium py-2 px-4 rounded-md "
+          className=
+          {`mt-4 w-full btn btn-neutral text-white
+            font-medium py-2 px-4 rounded-md ${selected.some((item) => item.name === technology.name)?"btn-disabled":""}`}
         >
           Add to Stack
         </button>

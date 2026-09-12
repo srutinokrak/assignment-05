@@ -24,6 +24,7 @@ const [technologiesPromise] = useState(()=> technologiesFetch)
   
      <Navbar/>
      <Banner/>
+     
   <Suspense fallback={<h2>loading...</h2>}>
      <Technologies technologiesPromise= {technologiesPromise()} />
   </Suspense>
