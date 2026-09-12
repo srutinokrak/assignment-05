@@ -5,11 +5,11 @@ import TechnologyCard from './TechnologyCard';
 
 interface AvailableProps {
     technologies: ITech[]
-   
+   setSelected:ITech[]
   
 }
 
-const Availabletechnologies = ({ technologies }: AvailableProps) => {
+const Availabletechnologies = ({ technologies ,setSelected}: AvailableProps) => {
  
 
     return (
@@ -18,6 +18,7 @@ const Availabletechnologies = ({ technologies }: AvailableProps) => {
         <div key={technology.id}>
           <TechnologyCard
             technology={technology}
+            setSelected={setSelected}
           />
         </div>
       ))}
