@@ -27,7 +27,7 @@ const SelectedTechnologies = ({
   return (
     <div className="h-fit w-72.25 border border-gray-300 p-6 rounded-lg">
      
-         <h2 className="font-bold">Your Stack</h2>
+         <h2 className="font-bold">Your Stacks</h2>
        
        <p className="text-gray-400 mb-3">{selected.length === 0 ?"No technologies selected yet.":`${selected.length} ${selected.length === 1 ? "Technology" : "Technologies"} Selected`}</p>
          
