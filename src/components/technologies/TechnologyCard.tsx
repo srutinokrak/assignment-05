@@ -24,7 +24,7 @@ const TechnologyCard = ({
   console.log(technology);
   return (
     <div>
-      <div className=" w-71.25 border border-gray-300 p-6 rounded-lg">
+      <div className=" md:w-71.25 border border-gray-300 p-6 rounded-lg">
         <div className="flex justify-between items-center">
           <img src={technology.icon} alt="" className="h-7 w-7" />
           <button
@@ -48,13 +48,13 @@ const TechnologyCard = ({
           </div>
         </div>
         <button
-        // disabled={selected.some((item) => item.name === technology.name)}
+        disabled={selected.some((item) => item.name === technology.name)}
           onClick={() => handleSelected(technology)}
           className=
           {`mt-4 w-full btn btn-neutral text-white
             font-medium py-2 px-4 rounded-md ${selected.some((item) => item.name === technology.name)?"btn-disabled":""}`}
         >
-          Add to Stack
+          {selected.some((item) => item.name === technology.name)?"✓ Added to Stack":"Add to Stack"}
         </button>
       </div>
     </div>

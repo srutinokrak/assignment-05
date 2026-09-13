@@ -25,7 +25,7 @@ const SelectedTechnologies = ({
   };
 
   return (
-    <div className="h-fit w-72.25 border border-gray-300 p-6 rounded-lg">
+    <div className="h-fit md:w-72.25 border border-gray-300 p-6 rounded-lg">
      
          <h2 className="font-bold">Your Stacks</h2>
        

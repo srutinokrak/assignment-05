@@ -14,7 +14,7 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
 
   console.log(technologies);
   return (
-    <div className="flex  gap-10 justify-center mx-auto">
+    <div className="flex flex-col md:flex-row  gap-10 justify-center mx-auto">
       <Availabletechnologies
         technologies={technologies}
         setSelected={setSelected}
